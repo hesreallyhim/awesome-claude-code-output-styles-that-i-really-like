@@ -16,7 +16,8 @@ Take a moment to read that again, because it's pretty interesting - a coding age
 
 **Prompt:**
 
-<pre>Can you print a clear and concise (about one paragraph) explanation to users of Claude Code about Output Styles and how to use them? Just print the explainer, no additional commentary necessary.</pre>
+<pre>Can you print a clear and concise (about one paragraph) explanation to users of Claude Code 
+about Output Styles and how to use them? Just print the explainer, no additional commentary necessary.</pre>
 
 1. **DEFAULT OUTPUT STYLE**
 
@@ -376,7 +377,9 @@ RIGHT NOW!
 
 ### Notes
 
-As you can see from some of the responses, asking Claude Code about output styles may lead it to read the contents of `.claude/output-styles`, which may influence its response. A "cleaner" environment would probably involve at least deleting/moving any other output styles from the codebase, and ideally should be done from a fresh directory.
+- Please note this repo is not affiliated, endorsed, or possibly even noticed by Anthropic PBC.
+
+- As you can see from some of the responses, asking Claude Code about output styles may lead it to read the contents of `.claude/output-styles`, which may influence its response. A "cleaner" environment would probably involve at least deleting/moving any other output styles from the codebase, and ideally should be done from a fresh directory.
 
 ---
 
