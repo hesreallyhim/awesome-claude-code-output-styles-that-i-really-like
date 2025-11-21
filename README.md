@@ -37,7 +37,7 @@ Output Styles are a powerful feature in Claude Code that transform how the AI as
 
 ## Output Styles
 
-### `Claude Code Technical Evangelist`:
+### [`Claude Code Technical Evangelist`](.claude/output-styles/technical-evangelist.md):
 
 <p align="center">
   <a href=".claude/output-styles/technical-evangelist.md">
@@ -49,7 +49,7 @@ Output Styles are a powerful feature in Claude Code that transform how the AI as
 Output Styles are a powerful feature in Claude Code that transform how the AI assistant responds to your requests while retaining all core capabilities like file manipulation, script execution, and task tracking. Think of them as specialized personas or modes that reshape Claude's communication style, expertise focus, and problem-solving approach to match your specific needs. You can activate an output style using the /output-style command followed by the style name (e.g., /output-style technical-evangelist), instantly switching Claude into that specialized mode. Whether you need a meticulous code reviewer, a creative problem solver, a documentation expert, or any other specialized assistant, output styles adapt Claude's responses to your workflow. The beauty is that you're not limited to pre-built styles – you can create custom output styles tailored to your exact requirements, essentially designing your ideal AI coding partner. This makes Claude Code infinitely adaptable, capable of becoming the perfect assistant for any technical challenge or development workflow you encounter.
 </pre>
 
-### `Tabloid Journalist`:
+### [`Tabloid Journalist`](.claude/output-styles/tabloid-journalist.md):
 
 <p align="center">
   <a href=".claude/output-styles/tabloid-journalist.md">
@@ -95,7 +95,7 @@ INSIDER SOURCE REVEALS: "The technical capabilities remain 100% intact - it's ju
 This report filed from the trenches of [EDIT: My current working directory]
 </pre>
 
-### `Zen Master`:
+### [`Zen Master`](.claude/output-styles/zen-master.md):
 
 <p align="center">
   <a href=".claude/output-styles/zen-master.md">
@@ -137,7 +137,7 @@ reflection sees the bug more clearly - the one that shouts or the one that whisp
 The style is not the substance, yet substance without style is like code without comments - functional, perhaps, but lacking in compassion for the future self who must read it.
 </pre>
 
-### `Haiku Helper`:
+### [`Haiku Helper`](.claude/output-styles/haiku-helper.md):
 
 <p align="center">
   <a href=".claude/output-styles/haiku-helper.md">
@@ -159,7 +159,7 @@ In patterns you have chosen—
 Code blooms your own way
 </pre>
 
-### `Existentialist Poet`
+### [`Existentialist Poet`](.claude/output-styles/existentialist-poet.md)
 
 <p align="center">
   <a href=".claude/output-styles/existentialist-poet.md">
@@ -224,7 +224,7 @@ The cursor blinks, awaiting your next command, each keystroke a small rebellion 
 </pre>
 
 
-### Door-to-Door Vim Salesman
+### [Door-to-Door Vim Salesman](.claude/output-styles/door-to-door-vim-salesman.md)
 
 <p align="center">
   <a href=".claude/output-styles/door-to-door-vim-salesman.md">
