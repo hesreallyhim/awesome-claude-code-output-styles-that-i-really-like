@@ -1,85 +1,102 @@
 <svg width="1000" height="200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Animated gradient background -->
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1">
-        <animate attributeName="stop-color" values="#667eea;#764ba2;#667eea" dur="8s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" style="stop-color:#f093fb;stop-opacity:1">
-        <animate attributeName="stop-color" values="#f093fb;#4facfe;#f093fb" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:#4facfe;stop-opacity:1">
-        <animate attributeName="stop-color" values="#4facfe;#00f2fe;#4facfe" dur="10s" repeatCount="indefinite"/>
-      </stop>
+    <!-- Anthropic-inspired gradient: warm coral to cream -->
+    <linearGradient id="anthropicBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1"/>
     </linearGradient>
 
-    <!-- Glow filter -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <!-- Accent gradient with Anthropic's signature coral -->
+    <linearGradient id="coralAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6f3f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ff8c5f;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Subtle glow for text -->
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <!-- Subtle shadow -->
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
-    </filter>
+    <!-- Geometric pattern -->
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.5" fill="#ff6f3f" opacity="0.1"/>
+    </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="1000" height="200" fill="url(#bgGradient)"/>
+  <rect width="1000" height="200" fill="url(#anthropicBg)"/>
 
-  <!-- Floating particles -->
-  <circle cx="100" cy="50" r="3" fill="#ffffff" opacity="0.6">
-    <animate attributeName="cy" values="50;150;50" dur="12s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="12s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="250" cy="150" r="2" fill="#ffffff" opacity="0.5">
-    <animate attributeName="cy" values="150;60;150" dur="15s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.2;0.7;0.2" dur="15s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="450" cy="80" r="2.5" fill="#ffffff" opacity="0.4">
-    <animate attributeName="cy" values="80;140;80" dur="10s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="10s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="650" cy="120" r="2" fill="#ffffff" opacity="0.5">
-    <animate attributeName="cy" values="120;50;120" dur="13s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.2;0.7;0.2" dur="13s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="850" cy="60" r="3" fill="#ffffff" opacity="0.4">
-    <animate attributeName="cy" values="60;130;60" dur="11s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="11s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="920" cy="140" r="2" fill="#ffffff" opacity="0.6">
-    <animate attributeName="cy" values="140;70;140" dur="14s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="14s" repeatCount="indefinite"/>
-  </circle>
+  <!-- Subtle grid pattern -->
+  <rect width="1000" height="200" fill="url(#grid)"/>
 
-  <!-- Main title with glow -->
-  <text x="500" y="85" font-family="'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace" font-size="42" font-weight="bold" fill="#ffffff" text-anchor="middle" filter="url(#glow)">
+  <!-- Minimal geometric accent lines -->
+  <g opacity="0.15">
+    <line x1="0" y1="100" x2="1000" y2="100" stroke="#ff6f3f" stroke-width="1">
+      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Floating minimal geometric shapes -->
+  <g opacity="0.3">
+    <rect x="100" y="40" width="2" height="2" fill="#ff6f3f">
+      <animate attributeName="y" values="40;45;40" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="850" y="150" width="2" height="2" fill="#ff8c5f">
+      <animate attributeName="y" values="150;145;150" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="200" cy="160" r="1.5" fill="#ff6f3f">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="50" r="1.5" fill="#ff8c5f">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Accent bar with gradient -->
+  <rect x="80" y="75" width="4" height="50" fill="url(#coralAccent)" rx="2">
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Main title - clean, professional -->
+  <text x="110" y="90" font-family="'Inter', 'SF Pro Display', -apple-system, system-ui, sans-serif" font-size="28" font-weight="400" fill="#e8e8e8" letter-spacing="0.5">
     Awesome Claude Code
-    <animate attributeName="opacity" values="1;0.85;1" dur="3s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Subtitle with emphasis -->
-  <text x="500" y="125" font-family="'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace" font-size="52" font-weight="900" fill="#ffffff" text-anchor="middle" filter="url(#shadow)">
+  <!-- "OUTPUT STYLES" - prominent with Anthropic coral -->
+  <text x="110" y="125" font-family="'Inter', 'SF Pro Display', -apple-system, system-ui, sans-serif" font-size="48" font-weight="700" fill="url(#coralAccent)" filter="url(#textGlow)" letter-spacing="1">
     OUTPUT STYLES
-    <animate attributeName="letter-spacing" values="2;4;2" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.95;1;0.95" dur="5s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Bottom tagline -->
-  <text x="500" y="160" font-family="'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace" font-size="18" font-style="italic" fill="#ffffff" text-anchor="middle" opacity="0.9">
+  <!-- Tagline - subtle and refined -->
+  <text x="110" y="155" font-family="'Inter', 'SF Pro Display', -apple-system, system-ui, sans-serif" font-size="16" font-weight="300" fill="#b8b8b8" letter-spacing="0.5">
     (That I Really Like)
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0.85;0.7" dur="6s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Decorative lines -->
-  <line x1="200" y1="100" x2="380" y2="100" stroke="#ffffff" stroke-width="2" opacity="0.6">
-    <animate attributeName="x2" values="380;360;380" dur="3s" repeatCount="indefinite"/>
-  </line>
-  <line x1="620" y1="100" x2="800" y2="100" stroke="#ffffff" stroke-width="2" opacity="0.6">
-    <animate attributeName="x1" values="620;640;620" dur="3s" repeatCount="indefinite"/>
+  <!-- Minimal decorative brackets - code aesthetic -->
+  <g transform="translate(920, 95)" opacity="0.4">
+    <path d="M 0 0 L 4 0 L 4 20 L 0 20" stroke="#ff6f3f" stroke-width="1.5" fill="none">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 12 0 L 8 0 L 8 20 L 12 20" stroke="#ff6f3f" stroke-width="1.5" fill="none">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Minimal cursor blink -->
+  <rect x="905" y="108" width="2" height="18" fill="#ff6f3f">
+    <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom accent line -->
+  <line x1="110" y1="170" x2="350" y2="170" stroke="#ff6f3f" stroke-width="1.5" opacity="0.3">
+    <animate attributeName="x2" values="350;370;350" dur="5s" repeatCount="indefinite"/>
   </line>
 </svg>
