@@ -133,3 +133,13 @@ temp/
 # PERSONAL
 
 INTERNAL
+
+# OUTPUT STYLES
+
+# Un-ignore .claude/ (globally ignored)
+!.claude/
+# Re-ignore .claude/** (all contents of .claude/)
+.claude/**
+# Un-ignore .claude/output-styles (overrides the rule above)
+!.claude/output-styles/
+!.claude/output-styles/**
