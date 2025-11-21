@@ -394,10 +394,12 @@ As you can see from some of the responses, asking Claude Code about output style
 
 ### Contributing
 
-If you want to share some awesome, useful, or just plain fun output styles, just open a PR and we'll go from there. Use the same prompt as given at the topic of this README, and you must include your `output-styles` file as well (you may license it however you want, but you must permit me to share the text on this repo).
+I kind of just made this for fun, but if you want to share some awesome, useful, or just plain fun output styles, just open a PR and we'll go from there. Use the same prompt as given at the topic of this README, and you must include your `output-styles` file as well (you may license it however you want, but you must permit me to share the text on this repo).
 
 ---
 
 ### License
 
 Unless otherwise noted, all resources and this repo itself is licensed under this MIT license (which you must include with any distribted versions of this work).
+"Claude Code" is a trademark of Anthropic PBC.
+All the beautiful artwork was done by Claude Code for Web.
