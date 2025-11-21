@@ -36,7 +36,7 @@
   <rect width="1000" height="200" fill="url(#scanlines)"/>
 
   <!-- Border frame - terminal window style -->
-  <rect x="10" y="10" width="980" height="180" fill="none" stroke="#33ff33" stroke-width="2" opacity="0.3" rx="4"/>
+  <rect x="10" y="10" width="980" height="180" fill="none" stroke="#ff6f3f" stroke-width="2" opacity="0.3" rx="4"/>
 
   <!-- Top terminal bar -->
   <rect x="10" y="10" width="980" height="30" fill="#000000" opacity="0.4" rx="4"/>
@@ -48,27 +48,27 @@
   </text>
 
   <!-- Command prompt indicator -->
-  <text x="40" y="80" font-family="'Courier New', 'Courier', 'Monaco', monospace" font-size="18" fill="#33ff33" filter="url(#terminalGlow)">
+  <text x="40" y="80" font-family="'Courier New', 'Courier', 'Monaco', monospace" font-size="18" fill="#ff6f3f" filter="url(#terminalGlow)">
     $
   </text>
 
   <!-- Main title line -->
-  <text x="65" y="80" font-family="'Courier New', 'Courier', 'Monaco', monospace" font-size="18" fill="#33ff33" filter="url(#terminalGlow)">
-    cat awesome_claude_code_
+  <text x="65" y="80" font-family="'Courier New', 'Courier', 'Monaco', monospace" font-size="24" fill="#ff6f3f" filter="url(#terminalGlow)">
+    awesome_claude_code_
   </text>
 
-  <!-- "OUTPUT STYLES" - retro terminal green -->
-  <text x="40" y="120" font-family="'Courier New', 'Courier', 'Monaco', monospace" font-size="42" font-weight="bold" fill="#33ff33" filter="url(#terminalGlow)" letter-spacing="2">
+  <!-- "OUTPUT STYLES" - Anthropic burnt orange -->
+  <text x="40" y="125" font-family="'Courier New', 'Courier', 'Monaco', monospace" font-size="42" font-weight="bold" fill="#ff6f3f" filter="url(#terminalGlow)" letter-spacing="2">
     OUTPUT STYLES
   </text>
 
   <!-- Tagline with comment style -->
-  <text x="40" y="155" font-family="'Courier New', 'Courier', 'Monaco', monospace" font-size="16" fill="#666666">
+  <text x="40" y="160" font-family="'Courier New', 'Courier', 'Monaco', monospace" font-size="16" fill="#999999">
     # (That I Really Like)
   </text>
 
   <!-- Blinking cursor -->
-  <rect x="675" y="102" width="12" height="24" fill="#33ff33" opacity="0.8">
+  <rect x="710" y="100" width="12" height="28" fill="#ff6f3f" opacity="0.8">
     <animate attributeName="opacity" values="0;0.8;0" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 
@@ -78,8 +78,8 @@
   </text>
 
   <!-- Subtle corner brackets -->
-  <path d="M 30 55 L 30 50 L 35 50" stroke="#33ff33" stroke-width="1" fill="none" opacity="0.3"/>
-  <path d="M 970 55 L 970 50 L 965 50" stroke="#33ff33" stroke-width="1" fill="none" opacity="0.3"/>
-  <path d="M 30 165 L 30 170 L 35 170" stroke="#33ff33" stroke-width="1" fill="none" opacity="0.3"/>
-  <path d="M 970 165 L 970 170 L 965 170" stroke="#33ff33" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M 30 55 L 30 50 L 35 50" stroke="#ff6f3f" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M 970 55 L 970 50 L 965 50" stroke="#ff6f3f" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M 30 165 L 30 170 L 35 170" stroke="#ff6f3f" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M 970 165 L 970 170 L 965 170" stroke="#ff6f3f" stroke-width="1" fill="none" opacity="0.3"/>
 </svg>
