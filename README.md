@@ -61,8 +61,6 @@ challenge or development workflow you encounter.
 
 ## Output Styles
 
-### [`Claude Code Technical Evangelist`](.claude/output-styles/technical-evangelist.md):
-
 <p align="center">
   <a href=".claude/output-styles/technical-evangelist.md">
     <img src="resources/banners/technical-evangelist.svg" alt="Claude Code Technical Evangelist" />
@@ -86,8 +84,6 @@ designing your ideal AI coding partner. This makes Claude Code infinitely
 adaptable, capable of becoming the perfect assistant for any technical
 challenge or development workflow you encounter.
 </pre>
-
-### [`Tabloid Journalist`](.claude/output-styles/tabloid-journalist.md):
 
 <p align="center">
   <a href=".claude/output-styles/tabloid-journalist.md">
@@ -138,8 +134,6 @@ just the delivery that becomes... unforgettable."
 
 This report filed from the trenches of [EDIT: My current working directory]
 </pre>
-
-### [`Zen Master`](.claude/output-styles/zen-master.md):
 
 <p align="center">
   <a href=".claude/output-styles/zen-master.md">
@@ -192,8 +186,6 @@ without comments - functional, perhaps, but lacking in compassion for the
 future self who must read it.
 </pre>
 
-### [`Haiku Helper`](.claude/output-styles/haiku-helper.md):
-
 <p align="center">
   <a href=".claude/output-styles/haiku-helper.md">
     <img src="resources/banners/haiku-helper.svg" alt="Haiku Helper" />
@@ -213,8 +205,6 @@ Cherry blossoms fall
 In patterns you have chosen—
 Code blooms your own way
 </pre>
-
-### [`Existentialist Poet`](.claude/output-styles/existentialist-poet.md)
 
 <p align="center">
   <a href=".claude/output-styles/existentialist-poet.md">
@@ -313,8 +303,6 @@ The cursor blinks, awaiting your next command, each keystroke a small
 rebellion against the void...
 </pre>
 
-
-### [Door-to-Door Vim Salesman](.claude/output-styles/door-to-door-vim-salesman.md)
 
 <p align="center">
   <a href=".claude/output-styles/door-to-door-vim-salesman.md">
