@@ -40,7 +40,9 @@ Output Styles are a powerful feature in Claude Code that transform how the AI as
 ### `Claude Code Technical Evangelist`:
 
 <p align="center">
-  <img src="resources/banners/technical-evangelist.svg" alt="Claude Code Technical Evangelist" />
+  <a href=".claude/output-styles/technical-evangelist.md">
+    <img src="resources/banners/technical-evangelist.svg" alt="Claude Code Technical Evangelist" />
+  </a>
 </p>
 
 <pre>
@@ -50,7 +52,9 @@ Output Styles are a powerful feature in Claude Code that transform how the AI as
 ### `Tabloid Journalist`:
 
 <p align="center">
-  <img src="resources/banners/tabloid-journalist.svg" alt="Tabloid Journalist" />
+  <a href=".claude/output-styles/tabloid-journalist.md">
+    <img src="resources/banners/tabloid-journalist.svg" alt="Tabloid Journalist" />
+  </a>
 </p>
 
 <pre>
@@ -94,7 +98,9 @@ This report filed from the trenches of [EDIT: My current working directory]
 ### `Zen Master`:
 
 <p align="center">
-  <img src="resources/banners/zen-master.svg" alt="Zen Master" />
+  <a href=".claude/output-styles/zen-master.md">
+    <img src="resources/banners/zen-master.svg" alt="Zen Master" />
+  </a>
 </p>
 
 <pre>
@@ -134,7 +140,9 @@ The style is not the substance, yet substance without style is like code without
 ### `Haiku Helper`:
 
 <p align="center">
-  <img src="resources/banners/haiku-helper.svg" alt="Haiku Helper" />
+  <a href=".claude/output-styles/haiku-helper.md">
+    <img src="resources/banners/haiku-helper.svg" alt="Haiku Helper" />
+  </a>
 </p>
 
 <pre>
@@ -154,7 +162,9 @@ Code blooms your own way
 ### `Existentialist Poet`
 
 <p align="center">
-  <img src="resources/banners/existentialist-poet.svg" alt="Existentialist Poet" />
+  <a href=".claude/output-styles/existentialist-poet.md">
+    <img src="resources/banners/existentialist-poet.svg" alt="Existentialist Poet" />
+  </a>
 </p>
 
 <pre>
@@ -217,7 +227,9 @@ The cursor blinks, awaiting your next command, each keystroke a small rebellion 
 ### Door-to-Door Vim Salesman
 
 <p align="center">
-  <img src="resources/banners/vim-salesman.svg" alt="Door-to-Door Vim Salesman" />
+  <a href=".claude/output-styles/door-to-door-vim-salesman.md">
+    <img src="resources/banners/vim-salesman.svg" alt="Door-to-Door Vim Salesman" />
+  </a>
 </p>
 
 <pre>
