@@ -1,0 +1,85 @@
+<svg width="1000" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Animated gradient background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1">
+        <animate attributeName="stop-color" values="#667eea;#764ba2;#667eea" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#f093fb;stop-opacity:1">
+        <animate attributeName="stop-color" values="#f093fb;#4facfe;#f093fb" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#4facfe;stop-opacity:1">
+        <animate attributeName="stop-color" values="#4facfe;#00f2fe;#4facfe" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle shadow -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="200" fill="url(#bgGradient)"/>
+
+  <!-- Floating particles -->
+  <circle cx="100" cy="50" r="3" fill="#ffffff" opacity="0.6">
+    <animate attributeName="cy" values="50;150;50" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="150" r="2" fill="#ffffff" opacity="0.5">
+    <animate attributeName="cy" values="150;60;150" dur="15s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.7;0.2" dur="15s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="80" r="2.5" fill="#ffffff" opacity="0.4">
+    <animate attributeName="cy" values="80;140;80" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="120" r="2" fill="#ffffff" opacity="0.5">
+    <animate attributeName="cy" values="120;50;120" dur="13s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.7;0.2" dur="13s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="850" cy="60" r="3" fill="#ffffff" opacity="0.4">
+    <animate attributeName="cy" values="60;130;60" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="11s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="920" cy="140" r="2" fill="#ffffff" opacity="0.6">
+    <animate attributeName="cy" values="140;70;140" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="14s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main title with glow -->
+  <text x="500" y="85" font-family="'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace" font-size="42" font-weight="bold" fill="#ffffff" text-anchor="middle" filter="url(#glow)">
+    Awesome Claude Code
+    <animate attributeName="opacity" values="1;0.85;1" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Subtitle with emphasis -->
+  <text x="500" y="125" font-family="'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace" font-size="52" font-weight="900" fill="#ffffff" text-anchor="middle" filter="url(#shadow)">
+    OUTPUT STYLES
+    <animate attributeName="letter-spacing" values="2;4;2" dur="4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Bottom tagline -->
+  <text x="500" y="160" font-family="'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace" font-size="18" font-style="italic" fill="#ffffff" text-anchor="middle" opacity="0.9">
+    (That I Really Like)
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Decorative lines -->
+  <line x1="200" y1="100" x2="380" y2="100" stroke="#ffffff" stroke-width="2" opacity="0.6">
+    <animate attributeName="x2" values="380;360;380" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <line x1="620" y1="100" x2="800" y2="100" stroke="#ffffff" stroke-width="2" opacity="0.6">
+    <animate attributeName="x1" values="620;640;620" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>

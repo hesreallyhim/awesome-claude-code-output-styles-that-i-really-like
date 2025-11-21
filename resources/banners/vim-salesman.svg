@@ -1,0 +1,122 @@
+<svg width="800" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vimGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#064e3b;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#047857;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1"/>
+    </linearGradient>
+
+    <pattern id="stripePattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none"/>
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#10b981" stroke-width="20" opacity="0.1"/>
+    </pattern>
+
+    <filter id="vimGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <radialGradient id="spotlight" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="120" fill="url(#vimGrad)" rx="8"/>
+  <rect width="800" height="120" fill="url(#stripePattern)" rx="8"/>
+
+  <!-- Spotlight effect -->
+  <circle cx="400" cy="60" r="150" fill="url(#spotlight)">
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Retro badge/seal -->
+  <g transform="translate(60, 60)">
+    <circle cx="0" cy="0" r="35" fill="#fbbf24" opacity="0.9">
+      <animate attributeName="r" values="35;37;35" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="30" fill="#f59e0b"/>
+    <text x="0" y="-5" font-family="Impact, Arial, sans-serif" font-size="16" font-weight="900" fill="#78350f" text-anchor="middle">
+      100%
+    </text>
+    <text x="0" y="10" font-family="Impact, Arial, sans-serif" font-size="10" font-weight="700" fill="#78350f" text-anchor="middle">
+      MODAL
+    </text>
+    <text x="0" y="20" font-family="Impact, Arial, sans-serif" font-size="10" font-weight="700" fill="#78350f" text-anchor="middle">
+      EDITING
+    </text>
+  </g>
+
+  <!-- Vim logo-inspired element -->
+  <g transform="translate(720, 35)">
+    <rect x="-25" y="0" width="50" height="50" fill="#22c55e" rx="5" opacity="0.8"/>
+    <text x="0" y="35" font-family="monospace" font-size="32" font-weight="900" fill="#064e3b" text-anchor="middle">
+      V
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Briefcase icon -->
+  <g transform="translate(130, 40)" opacity="0.6">
+    <rect x="0" y="5" width="30" height="20" fill="#34d399" rx="2"/>
+    <rect x="10" y="0" width="10" height="8" fill="#34d399" rx="1"/>
+    <line x1="0" y1="13" x2="30" y2="13" stroke="#064e3b" stroke-width="1"/>
+  </g>
+
+  <!-- Main text -->
+  <text x="175" y="50" font-family="'Courier New', 'Courier', monospace" font-size="32" font-weight="bold" fill="#ffffff" filter="url(#vimGlow)">
+    Door-to-Door
+  </text>
+  <text x="175" y="80" font-family="'Courier New', 'Courier', monospace" font-size="32" font-weight="bold" fill="#d1fae5">
+    VIM SALESMAN
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Vim commands floating -->
+  <g opacity="0.4">
+    <text x="180" y="100" font-family="monospace" font-size="12" fill="#d1fae5">
+      :w
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+    </text>
+    <text x="210" y="100" font-family="monospace" font-size="12" fill="#d1fae5">
+      :q
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </text>
+    <text x="235" y="100" font-family="monospace" font-size="12" fill="#d1fae5">
+      dd
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </text>
+    <text x="260" y="100" font-family="monospace" font-size="12" fill="#d1fae5">
+      yy
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Enthusiastic stars -->
+  <g transform="translate(650, 50)">
+    <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" fill="#fbbf24">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite" additive="sum"/>
+    </polygon>
+  </g>
+
+  <!-- "Special Offer" tag -->
+  <g transform="translate(140, 15)">
+    <rect x="0" y="0" width="100" height="18" fill="#ef4444" rx="3" opacity="0.9"/>
+    <text x="50" y="13" font-family="Impact, Arial, sans-serif" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">
+      TODAY ONLY!
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Animated checkmarks -->
+  <g transform="translate(600, 25)" opacity="0.5">
+    <path d="M 0 5 L 3 8 L 8 0" stroke="#34d399" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

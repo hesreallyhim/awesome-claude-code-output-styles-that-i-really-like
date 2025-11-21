@@ -1,0 +1,108 @@
+<svg width="800" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="haikuGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fef3f2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffe4e6;stop-opacity:1"/>
+    </linearGradient>
+
+    <radialGradient id="petalGrad" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#fecdd3;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fda4af;stop-opacity:0.8"/>
+    </radialGradient>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="120" fill="url(#haikuGrad)" rx="8"/>
+
+  <!-- Subtle texture -->
+  <rect width="800" height="120" fill="#ffffff" opacity="0.3" rx="8"/>
+
+  <!-- Branch -->
+  <path d="M 50 80 Q 150 70, 250 75 T 450 70" stroke="#78350f" stroke-width="4" fill="none" opacity="0.6" stroke-linecap="round">
+    <animate attributeName="opacity" values="0.5;0.7;0.5" dur="8s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Cherry blossoms (5 petals each) -->
+  <g transform="translate(120, 70)" opacity="0.8">
+    <g>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="2" fill="#fbbf24"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite" additive="sum"/>
+    </g>
+  </g>
+
+  <g transform="translate(200, 65)" opacity="0.7">
+    <g>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="2" fill="#fbbf24"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="25s" repeatCount="indefinite" additive="sum"/>
+    </g>
+  </g>
+
+  <g transform="translate(350, 68)" opacity="0.8">
+    <g>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#petalGrad)" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="2" fill="#fbbf24"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite" additive="sum"/>
+    </g>
+  </g>
+
+  <!-- Falling petals -->
+  <ellipse cx="650" cy="20" rx="3" ry="5" fill="#fda4af" opacity="0.6" transform="rotate(45)">
+    <animate attributeName="cy" values="20;110;20" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="12s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" from="45 650 20" to="405 650 110" dur="12s" repeatCount="indefinite" additive="replace"/>
+  </ellipse>
+
+  <ellipse cx="730" cy="10" rx="3" ry="5" fill="#fda4af" opacity="0.5" transform="rotate(20)">
+    <animate attributeName="cy" values="10;100;10" dur="15s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="15s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" from="20 730 10" to="380 730 100" dur="15s" repeatCount="indefinite" additive="replace"/>
+  </ellipse>
+
+  <!-- Main text -->
+  <text x="480" y="50" font-family="'Georgia', 'Palatino', serif" font-size="38" font-weight="300" fill="#881337" filter="url(#softGlow)">
+    Haiku Helper
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Haiku lines -->
+  <text x="480" y="75" font-family="'Georgia', 'Palatino', serif" font-size="12" fill="#be123c" opacity="0.7">
+    Words fall like petals
+  </text>
+  <text x="480" y="90" font-family="'Georgia', 'Palatino', serif" font-size="12" fill="#be123c" opacity="0.7">
+    Five-seven-five rhythm flows
+  </text>
+  <text x="480" y="105" font-family="'Georgia', 'Palatino', serif" font-size="12" fill="#be123c" opacity="0.7">
+    Code blooms in verses
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Decorative seal (hanko-style circle) -->
+  <circle cx="760" cy="60" r="18" fill="none" stroke="#9f1239" stroke-width="2" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="760" y="67" font-family="serif" font-size="20" font-weight="bold" fill="#9f1239" text-anchor="middle" opacity="0.6">
+    俳
+  </text>
+</svg>

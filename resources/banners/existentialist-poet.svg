@@ -1,0 +1,110 @@
+<svg width="800" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="existGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#312e81;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4c1d95;stop-opacity:1"/>
+    </linearGradient>
+
+    <radialGradient id="voidGrad" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </radialGradient>
+
+    <filter id="existGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="120" fill="url(#existGrad)" rx="8"/>
+
+  <!-- Abstract void circles -->
+  <circle cx="100" cy="60" r="40" fill="url(#voidGrad)">
+    <animate attributeName="r" values="40;50;40" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="700" cy="60" r="35" fill="url(#voidGrad)">
+    <animate attributeName="r" values="35;45;35" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="10s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Floating abstract shapes representing thoughts -->
+  <g opacity="0.2">
+    <path d="M 150 30 Q 160 20, 170 30 T 190 30" stroke="#a5b4fc" stroke-width="2" fill="none">
+      <animate attributeName="d" values="M 150 30 Q 160 20, 170 30 T 190 30;M 150 35 Q 160 25, 170 35 T 190 35;M 150 30 Q 160 20, 170 30 T 190 30" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 600 80 Q 610 90, 620 80 T 640 80" stroke="#a5b4fc" stroke-width="2" fill="none">
+      <animate attributeName="d" values="M 600 80 Q 610 90, 620 80 T 640 80;M 600 85 Q 610 95, 620 85 T 640 85;M 600 80 Q 610 90, 620 80 T 640 80" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Ink splatter effect (abstract) -->
+  <g opacity="0.15" filter="url(#blur)">
+    <circle cx="650" cy="40" r="8" fill="#c7d2fe"/>
+    <circle cx="660" cy="35" r="5" fill="#c7d2fe"/>
+    <circle cx="645" cy="48" r="6" fill="#c7d2fe"/>
+    <circle cx="670" cy="45" r="4" fill="#c7d2fe"/>
+  </g>
+
+  <!-- Quote marks -->
+  <text x="180" y="40" font-family="'Georgia', 'Garamond', serif" font-size="60" fill="#6366f1" opacity="0.2" font-weight="bold">
+    "
+  </text>
+  <text x="740" y="100" font-family="'Georgia', 'Garamond', serif" font-size="60" fill="#6366f1" opacity="0.2" font-weight="bold">
+    "
+  </text>
+
+  <!-- Existential symbols - question mark -->
+  <text x="50" y="100" font-family="'Georgia', 'Garamond', serif" font-size="36" fill="#818cf8" opacity="0.4" filter="url(#existGlow)">
+    ?
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Main text -->
+  <text x="210" y="55" font-family="'Georgia', 'Garamond', serif" font-size="36" font-style="italic" fill="#e0e7ff" filter="url(#existGlow)">
+    Existentialist Poet
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Philosophical quote -->
+  <text x="210" y="85" font-family="'Georgia', 'Garamond', serif" font-size="14" font-style="italic" fill="#c7d2fe" opacity="0.7">
+    In the void of the terminal, we write our own meaning...
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="7s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Blinking cursor metaphor -->
+  <rect x="730" y="73" width="3" height="18" fill="#a5b4fc">
+    <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Abstract thought lines -->
+  <g opacity="0.3">
+    <line x1="200" y1="100" x2="280" y2="100" stroke="#818cf8" stroke-width="1">
+      <animate attributeName="x2" values="280;300;280" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="290" y1="100" x2="350" y2="100" stroke="#818cf8" stroke-width="1">
+      <animate attributeName="x1" values="290;310;290" dur="4s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Subtle stars representing consciousness -->
+  <circle cx="160" cy="25" r="1.5" fill="#e0e7ff">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="550" cy="35" r="1.5" fill="#e0e7ff">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="680" cy="25" r="1.5" fill="#e0e7ff">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

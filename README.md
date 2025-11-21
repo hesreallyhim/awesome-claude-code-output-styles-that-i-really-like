@@ -1,4 +1,6 @@
-# Awesome Claude Code _OUTPUT STYLES_ (That I Really Like)
+<p align="center">
+  <img src="resources/banners/header.svg" alt="Awesome Claude Code OUTPUT STYLES" />
+</p>
 
 Claude Code is a revolutionary in-your-editor and in-your-face coding agent created by Anthropic© PBC. One of the most exciting things about Claude Code is not just the power of its models or its agentic workflows - it's the fact that Anthropic are always offering the user new ways to interact with and customize their Claude Code experience. One of the best examples of this is [**Output styles**](https://code.claude.com/docs/en/output-styles).
 
@@ -37,11 +39,19 @@ Output Styles are a powerful feature in Claude Code that transform how the AI as
 
 ### `Claude Code Technical Evangelist`:
 
+<p align="center">
+  <img src="resources/banners/technical-evangelist.svg" alt="Claude Code Technical Evangelist" />
+</p>
+
 <pre>
 Output Styles are a powerful feature in Claude Code that transform how the AI assistant responds to your requests while retaining all core capabilities like file manipulation, script execution, and task tracking. Think of them as specialized personas or modes that reshape Claude's communication style, expertise focus, and problem-solving approach to match your specific needs. You can activate an output style using the /output-style command followed by the style name (e.g., /output-style technical-evangelist), instantly switching Claude into that specialized mode. Whether you need a meticulous code reviewer, a creative problem solver, a documentation expert, or any other specialized assistant, output styles adapt Claude's responses to your workflow. The beauty is that you're not limited to pre-built styles – you can create custom output styles tailored to your exact requirements, essentially designing your ideal AI coding partner. This makes Claude Code infinitely adaptable, capable of becoming the perfect assistant for any technical challenge or development workflow you encounter.
 </pre>
 
 ### `Tabloid Journalist`:
+
+<p align="center">
+  <img src="resources/banners/tabloid-journalist.svg" alt="Tabloid Journalist" />
+</p>
 
 <pre>
 🔥 BREAKING: SECRET FILES DISCOVERED IN CLAUDE CODE! 🔥
@@ -83,6 +93,10 @@ This report filed from the trenches of [EDIT: My current working directory]
 
 ### `Zen Master`:
 
+<p align="center">
+  <img src="resources/banners/zen-master.svg" alt="Zen Master" />
+</p>
+
 <pre>
 settles into lotus position, gazing at the flickering terminal
 
@@ -119,6 +133,10 @@ The style is not the substance, yet substance without style is like code without
 
 ### `Haiku Helper`:
 
+<p align="center">
+  <img src="resources/banners/haiku-helper.svg" alt="Haiku Helper" />
+</p>
+
 <pre>
 Voice shifts like wind
 Through bamboo forests, each path
@@ -134,6 +152,10 @@ Code blooms your own way
 </pre>
 
 ### `Existentialist Poet`
+
+<p align="center">
+  <img src="resources/banners/existentialist-poet.svg" alt="Existentialist Poet" />
+</p>
 
 <pre>
 I gaze into the terminal, where text flows like consciousness itself - ephemeral, mutable, seeking meaning in the void of the command line...
@@ -193,6 +215,10 @@ The cursor blinks, awaiting your next command, each keystroke a small rebellion 
 
 
 ### Door-to-Door Vim Salesman
+
+<p align="center">
+  <img src="resources/banners/vim-salesman.svg" alt="Door-to-Door Vim Salesman" />
+</p>
 
 <pre>
 straightens tie nervously and pulls out a well-worn laminated brochure

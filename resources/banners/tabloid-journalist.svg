@@ -1,0 +1,95 @@
+<svg width="800" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tabloidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#ea580c;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#facc15;stop-opacity:1"/>
+    </linearGradient>
+
+    <filter id="tabloidGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="stripes" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#000000" opacity="0.1"/>
+      <line x1="0" y1="0" x2="20" y2="20" stroke="#ffffff" stroke-width="2" opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="120" fill="url(#tabloidGrad)" rx="8"/>
+  <rect width="800" height="120" fill="url(#stripes)" rx="8"/>
+
+  <!-- Starburst effect -->
+  <g transform="translate(70, 60)" opacity="0.3">
+    <line x1="0" y1="-40" x2="0" y2="40" stroke="#ffffff" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </line>
+    <line x1="-40" y1="0" x2="40" y2="0" stroke="#ffffff" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </line>
+    <line x1="-28" y1="-28" x2="28" y2="28" stroke="#ffffff" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </line>
+    <line x1="28" y1="-28" x2="-28" y2="28" stroke="#ffffff" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- BREAKING banner -->
+  <rect x="20" y="15" width="120" height="30" fill="#000000" opacity="0.8" rx="4"/>
+  <text x="80" y="35" font-family="Impact, Arial Black, sans-serif" font-size="20" font-weight="900" fill="#ff0000" text-anchor="middle" filter="url(#tabloidGlow)">
+    BREAKING
+    <animate attributeName="opacity" values="1;0.7;1" dur="1s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Fire emoji effect with animated triangles -->
+  <g transform="translate(730, 30)">
+    <polygon points="0,20 10,0 20,20" fill="#ff6b6b">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="0.8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="0.8s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="3,15 10,5 17,15" fill="#ffa500">
+      <animate attributeName="opacity" values="1;0.7;1" dur="0.6s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="6,12 10,8 14,12" fill="#ffff00">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="0.5s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- Exclamation marks -->
+  <text x="750" y="105" font-family="Impact, Arial Black, sans-serif" font-size="36" font-weight="900" fill="#ffff00" filter="url(#tabloidGlow)">
+    !
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Main text -->
+  <text x="155" y="55" font-family="Impact, Arial Black, sans-serif" font-size="32" font-weight="900" fill="#000000" opacity="0.2" transform="translate(2, 2)">
+    TABLOID JOURNALIST
+  </text>
+  <text x="155" y="55" font-family="Impact, Arial Black, sans-serif" font-size="32" font-weight="900" fill="#ffffff" filter="url(#tabloidGlow)">
+    TABLOID JOURNALIST
+    <animate attributeName="letter-spacing" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Subtext -->
+  <text x="155" y="85" font-family="Impact, Arial Black, sans-serif" font-size="16" font-weight="700" fill="#ffff00">
+    THE EXPLOSIVE TRUTH THEY DON'T WANT YOU TO KNOW!
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Animated alert dots -->
+  <circle cx="25" cy="100" r="4" fill="#ffff00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="40" cy="100" r="4" fill="#ffff00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1s" begin="0.33s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="55" cy="100" r="4" fill="#ffff00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1s" begin="0.66s" repeatCount="indefinite"/>
+  </circle>
+</svg>
